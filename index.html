@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> wish uhhhh manyyy moreeee Happiesttt Birthdayss bangarammmmmm 🎂</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    color: blue;
+    padding: 20px;
+    font-size: 28px;
+}
+
+/* Typing Animation */
+#name {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    border-right: 3px solid white;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    padding: 15px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Message */
+.message {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Video */
+video {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background: #ff4081;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+🎉 wish uhhhh manyyy moreeee Happiesttt Birthdayss bangarammmmmm 🎂 <br>
+<span id="name"></span>
+</header>
+ 
+<div class="container">
+
+<h3>📸 Memories</h3>
+<div class="gallery">
+    <img src="C:\Users\supri\OneDrive\Pictures\IMG.1.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\IMG.1.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\IMG.2.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\IMG.3.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\img.4.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\img.5.jpeg">
+    <img src="C:\Users\supri\OneDrive\Pictures\img.6.jpeg">
+</div>
+
+<div class="message">
+💖 Happiest Birthday toooo myy prettiest human beinggggg ! 💖 <br><br>
+Happy Birthday to my favorite human 💖🎂
+
+Life gave me a lot of lessons… but the best gift it gave me was YOU. Through all the chaos, stress, and those heavy-hearted days, you somehow managed to make me laugh (even when I didn’t want to 😄).
+
+You are the kind of person everyone wishes to have in their life… and I’m just lucky I actually do.
+
+In my worst phases, when my heart felt too heavy, you just stayed, listened, and made me feel I wasn’t alone. That meant everything to me.
+
+And somehow, even in those serious moments… you still managed to make me laugh 😭😂
+
+You’re my chaos partner, my safe place… all in one.
+
+So today, I just want to say — thank you for existing, thank you for staying, and thank you for being mine (in the best way 💖)
+
+Now go enjoy your day like the queen you are 👑✨
+Happy Birthday  myyyy bangarammmmmmmmmmmmm🎂💖
+
+
+You’ve seen me at my worst, my most confused, my most broken… and still stayed like nothing could change your place in my life. That’s rare. That’s real.
+
+Honestly, I don’t know how you do it… one moment you’re my therapist, next moment my comedian 🤣 .
+
+I just want you to know — no matter where life takes us, you’ll always have a permanent place in my heart ❤️
+But let’s be honest… along with emotional support, you also gave me unlimited entertainment 😂
+From serious talks to random nonsense, you make everything feel lighter.
+AND THANKS A LOT FOR BARINH MY NONSENSE AND UNSTOPABLE TALKS EVERY MIN...… BANGARUUUUUUU....
+
+Now enough emotional talk… today is YOUR day 😌
+Go eat cake, enjoy, and don’t forget to save some for me 🍰😜
+
+Happy Birthday once again… I’m lucky to have you 💖✨
+</div>
+
+<h3>🎥 Special Video</h3>
+<video controls>
+    <source src="C:\Users\supri\OneDrive\Pictures\video.1.mp4">
+</video>
+
+<br>
+<button onclick="showPopup()">🎁 Surprise</button>
+
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>🎉 Surprise 🎉</h2>
+        <p>You are my favorite person 💖</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<!-- Background Music -->
+<audio id="music" loop>
+    <source src=""C:\Users\supri\OneDrive\Pictures\audio.mpeg" " type="audio/mp3">
+</audio>
+
+<script>
+// Typing Animation
+let text = " THEE PREETIEST ONEEE  ❤️"; // CHANGE NAME HERE
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        document.getElementById("name").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 100);
+    }
+}
+typing();
+
+// Popup
+function showPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+// Close Popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// Auto Play Music (on first click due to browser policy)
+document.body.addEventListener("click", function() {
+    document.getElementById("music").play();
+}, { once: true });
+
+</script>
+
+</body>
+</html>
